@@ -1,0 +1,673 @@
+.main-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.section-main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    position: relative;
+}
+
+.innerSectionDiv{
+    margin: 80px 0 var(--fkszl86) 0;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.sizeOfPoss{
+    font-size: 96px;
+}
+
+.sizeOfPoss, .sizeOfPoss-2{
+    line-height: 120px;
+    font-weight: 800;
+}
+
+.typeOfPoss{
+    text-transform: uppercase;
+    will-change: transform;
+    opacity: 0;
+}
+
+.animOfPoss{
+    -webkit-animation: changeVisible-4 .5s ease .5s both;
+    animation: changeVisible-4 .5s ease .5s both;
+}
+
+.positionOfPoss{
+    position: relative;
+}
+
+.positionOfPoss::before{
+    content: "&";
+    width: 4.7rem; /* Вопрос */
+    height: 5.3125rem;
+    display: inline-block;
+    font-size: 6.5rem;
+    line-height: 3.8125rem;
+    font-weight: 700;
+    color: var(--fkszl810);
+    font-family: Caveat;
+}
+
+.typeOfPro{
+    margin-top: 60px;
+    margin-bottom: 24px;
+    display: inline-block;
+    opacity: 0;
+    text-transform: uppercase;
+    will-change: transform;
+}
+
+.sizeOfPro{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.animOfPro{
+    -webkit-animation: changeVisible-5 .5s ease .5s both;
+    animation: changeVisible-5 .5s ease .5s both;
+}
+
+.animOfArrow{
+    webkit-animation: changeVisible-6 .5s ease .6s both;
+    animation: changeVisible-6 .5s ease .6s both;
+}
+
+.typeOfArrow{
+    width: 135px;
+    height: 64px;
+    margin-left: calc(-50vw + 50% + 20px);
+    margin-right: calc(-50vw + 50% + 20px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    will-change: transform;
+    opacity: 0;
+    z-index: -1;
+}
+
+.decor-svg{
+    fill: var(--fkszl815);
+}
+
+.animOfImage{
+    position: absolute;
+    top: 59vh;
+    right: 0;
+    z-index: -1;
+    will-change: transform;
+}
+
+.animOfImage, .animOfImage-2{
+    width: 29.3rem;
+    height: 29.3rem;
+}
+
+.animOfImage-2{
+    position: relative;
+}
+
+.typeOfService-1{
+    width: 100vw;
+}
+
+
+
+.sizeOfBlockService-1{
+    min-width: 570px;
+    min-height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sizeOfBlockService-2{
+    margin-top: 60px;
+    margin-right: 120px;
+}
+
+.buttonOfService{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    will-change: margin-bottom;
+    transition: margin-bottom 0.5s ease;
+}
+
+.spanOfService-1{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-transform: uppercase;
+    transition: color .5s ease;
+    will-change: color,font-size,line-height;
+    position: relative;
+}
+
+.spanOfService-4{
+    transition: font-size 0.5s ease, line-height 0.5s ease;
+}
+
+.spanOfService-2{
+    position: relative;
+    transition: font-size 0.5s ease, line-height 0.5s ease;
+}
+
+.spanOfService-3{
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 800;
+}
+
+.spanOfService-2:after{
+    opacity: 1;
+}
+
+.spanOfService-1::after{
+    content: "";
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: -38px;
+    bottom: 22px;
+    background-color: var(--fkszl810);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity .2s ease;
+}
+
+.spanOfService-4::after{
+    opacity: 0;
+}
+
+.More{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.mainBlock-1{
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.typeOfSerTxt{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    animation: changeVisible-7 0.5s ease 0.5s both;
+    will-change: opacity;
+}
+
+.more-6{
+    padding: 0;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+}
+
+.more-5{
+    position: relative;
+    padding: 5px 5px 16px;
+    color: var(--fkszl815);
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: var(--fkszl8h);
+    border: 1px dashed transparent;
+    transition: color .2s ease,background-color .2s ease;
+}
+
+.more-4{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: -5px;
+    padding: 5px;
+}
+
+.more-3{
+    padding: 5px 19px 5px 5px;
+}
+
+.more-2{
+    margin-top: var(--fkszl82);
+    display: inline-block;
+    position: relative;
+}
+
+.more-1{
+    position: relative;
+    padding: 5px 5px 16px;
+    color: var(--fkszl815);
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: var(--fkszl8h);
+    border: 1px dashed transparent;
+    transition: color .2s ease,background-color .2s ease;
+}
+
+.more-7:hover{
+    color: var(--fkszl810);
+}
+
+.more-3::after{
+    content: "";
+    width: 9px;
+    height: 12px;
+    display: inline-block;
+    margin-left: 4px;
+    background-image: url(https://doubletapp.ai/v2/static/svg/fat-red-arrow.svg);
+    background-size: 9px 12px;
+}
+
+.more-4+.redLine-3{
+    -webkit-clip-path: polygon(0 0,0 0,0 100%,0 100%);
+    clip-path: polygon(0 0,0 0,0 100%,0 100%);
+}
+
+.redLine-3{
+    background-image: url(https://doubletapp.ai/v2/static/svg/underline.svg);
+}
+
+.typeOfArrowService{
+    width: 120px;
+    height: 122px;
+    position: absolute;
+    top: -11px;
+    left: -170px;
+    background-image: url(https://doubletapp.ai/v2/static/svg/fat-red-arrow.svg);
+    transition: transform .3s ease;
+    will-change: transform;
+}
+
+.image-service-4, .image-service-5{
+    width: 13rem;
+    height: 26rem;
+}
+
+.image-service-6, .image-service-7{
+    width: 27rem;
+    height: 17rem;
+}
+
+.image-service-7{
+    top: 6.6875rem;
+    left: 2.625rem;
+}
+
+.image-service-6{
+    top: 11.1rem;
+    left: -1.6875rem;
+    z-index: 1;
+}
+
+.image-service-4{
+    top: 0.25rem;
+    left: 1.75rem;
+}
+
+.image-service-5{
+    top: 3.875rem;
+    left: 14.375rem;
+}
+
+.image-service-8{
+    width: 30.9375rem;
+    height: 20.25rem;
+    top: 7.125rem;
+    left: -2.6875rem;
+} 
+
+.image-service-9{
+    width: 12.3rem;
+    height: 25.3125rem;
+    top: 6.625rem;
+    left: 16.25rem;
+} 
+
+
+
+.typeOfImageService{
+    border-radius: var(--fkszl8f);
+    position: absolute;
+    will-change: transform;
+    animation: fade-in 0.5s ease;
+    -webkit-filter: drop-shadow(0 4.90239px 17.1584px rgba(0,0,0,.1));
+    filter: drop-shadow(0 4.90239px 17.1584px rgba(0,0,0,.1));
+}
+
+
+
+.mobileService{
+    border-radius: var(--fkszl8f);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    inset: 0px;
+}
+
+.styles-active{
+    opacity: 1;
+    transform: translateY(119px);
+}
+
+.blockForImage{
+    width: 34.3125rem;
+    height: 34.3125rem;
+    position: relative;
+}
+
+.image-service-4::before, .image-service-6::before, .image-service-8::before{
+    content: "";
+    width: 5.25rem;
+    height: 5.25rem;
+    position: absolute;
+    bottom: -0.9375rem;
+    left: -0.9375rem;
+    background-image: url(https://doubletapp.ai/v2/static/svg/corner-decor.svg);
+    background-position: 50%;
+    background-size: cover;
+}
+
+.image-service-a{
+    width: 14.875rem;
+    height: 14.875rem;
+    top: 15.5625rem;
+    left: 0.0625rem;
+}
+
+.image-service-b{
+    width: 8.0625rem;
+    height: 8.0625rem;
+    top: 1.9rem;
+    left: 5.5625rem;
+}
+
+.image-service-c{
+    width: 11.75rem;
+    height: 11.75rem;
+    top: 10.0625rem;
+    left: 18.375rem;
+}
+
+.image-service-d{
+    width: 13.875rem;
+    height: 13.875rem;
+    top: 14.5625rem;
+    left: 1.0625rem;
+}
+
+.image-service-e{
+    width: 6.0625rem;
+    height: 6.0625rem;
+    top: 0.5625rem;
+    left: 8.5625rem;
+}
+
+.image-service-f{
+    width: 10.75rem;
+    height: 10.75rem;
+    top: 10.0625rem;
+    left: 19.375rem;
+}
+
+.CircleBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BlockCircle-1{
+    overflow: hidden;
+}
+
+.BlockCircle-2{
+    width: min(100vw,1920px);
+}
+
+.circleImg{
+    position: relative;
+    left: min(300px,calc(100% - 208px));
+    top: 0;
+    height: 376px;
+    width: 376px;
+}
+
+.PhotoService{
+    margin-left: auto;
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+}
+
+.redCircleAir{
+    display: none;
+}
+
+.sh-name{
+    line-height: 120px;
+    font-weight: 800;
+    font-size: 96px;
+}
+
+@media screen and (min-width: 1279px) {
+    .sizeOfPoss{
+        font-size: 5rem;
+        line-height: 6.5rem;
+    }
+
+    .sh-name{
+        font-weight: 800;
+        font-size: 130px;
+        line-height: 150px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    
+
+    .typeOfArrowService{
+        width: 80px;
+        height: 80px;
+        top: 10px;
+        left: -80px;
+        background-size: 80px 80px;
+    }
+
+    .section-main{
+        height: auto;
+    }
+
+    .innerSectionDiv {
+        margin: var(--fkszl86) 0;
+        white-space: normal;
+    }
+
+    .typeOfPoss {
+        width: 600px;
+    }
+
+    .positionOfPoss::before{
+        
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: -40px;
+        left: 448px;
+        font-size: 260px;
+    }
+
+    .mainBlock-1{
+        display: block;
+        position: relative;
+    }
+    
+    .sizeOfBlockService-2{
+        margin: 0;
+    }
+
+    .PhotoService{
+        position: absolute;
+        top: 252px;
+        right: 0;
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+    }
+
+    .PhotoService, .redCircleAir{
+        width: 549px;
+        height: 549px;
+    }
+
+    .redCircleAir{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        z-index: -1;
+    }
+
+    .redCircleAir img{
+        width: 549px;
+        aspect-ratio: auto 549 / 549;
+        height: 549px;
+        color: transparent;
+    }
+}
+
+
+@media screen and (min-width: 757px) and (max-width: 1279px){
+    .typeOfService-1{
+        height: 994px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    .sh-name{
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 900;
+    }
+
+    .section-main{
+        min-height: 730px;
+    }
+
+    .innerSectionDiv{
+        margin: var(--fkszl84) 0 var(--fkszl82) 0;
+    }
+
+    .typeOfPoss{
+        width: 290px;
+    }
+
+    .sizeOfPoss{
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 900;
+    }
+
+    .positionOfPoss{
+        -webkit-animation: changeVisible-4 .5s ease .5s both;
+        animation: changeVisible-4 .5s ease .5s both;
+    }
+
+    .positionOfPoss::before{
+        width: 100px;
+        height: 100px;
+        top: -17px;
+        left: 188px;
+        font-size: 130px;
+    }
+
+    .typeOfPro{
+        margin-top: 24px;
+    }
+
+    .sizeOfPro{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .typeOfArrow{
+        margin-left: calc(-50vw + 50% - 3px);
+        margin-right: calc(-50vw + 50% - 3px);
+        left: 0;
+        bottom: 160px;
+    }
+
+    .sizeOfBlockService-1{
+        min-height: 510px;
+        min-width: auto;
+    }
+
+    .buttonOfService{
+        max-width: none;
+        width: 100%;
+    }
+
+    .spanOfService-2{
+        font-size: 42px;
+        line-height: 56px;
+    }
+
+    .spanOfService-1::after{
+        width: 18px;
+        height: 18px;
+        right: -23px;
+        bottom: 13px;
+    }
+
+    .typeOfArrowService{
+        width: 20px;
+        height: 20px;
+        top: 18px;
+        left: -24px;
+        background-size: 20px 20px;
+    }
+
+    .secOfService-1{
+        padding-top: 62px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-bottom: var(--fkszl84);
+      }
+}
+
+
+
+@import url(./video.css);
+@import url(./project.css);
+@import url(./clients.css);
+@import url(./form.css);
+
+
+
+
+
+
+
+

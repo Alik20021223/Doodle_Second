@@ -1,0 +1,285 @@
+.footer{
+    margin-top: auto;
+    padding-top: var(--fkszl84);
+    padding-bottom: var(--fkszl83);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    -webkit-font-feature-settings: liga off;
+    font-feature-settings: liga off;
+    color: var(--fkszl815);
+}
+
+.icons-3, .linkIcon-7{
+    display: flex;
+    align-items: center;
+}
+
+.icons-3 a:not(:last-child){
+    margin-right: 8px;
+}
+
+.linkIcon-6{
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    position: relative;
+}
+
+.linkIcon-6 img{
+    height: 15px;
+    width: 15px;
+}
+
+.linkIcon-7{
+    background-color: var(--fkszl815);;
+}
+
+.icons-3 .linkIcon-5-2 img, .icons-3  .linkIcon-5-1 img, .icons-3  .linkIcon-5-3 img {
+    position: absolute;
+    left: 55%;
+    transform: translate(calc(-50% - 1px),calc(-50% + 1px));
+    top: 44%;
+}
+
+.linkIcon-7 div{
+    position: relative;
+    width: 16px;
+    height: 13px;
+}
+
+.logoLink-2{
+    width: 242px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logoLink-1{
+    text-decoration: none;
+    width: 200px;
+    height: 24px;
+    margin-bottom: var(--fkszl83);
+    fill: var(--fkszl815);
+}
+
+.iconsFooter{
+    display: flex;
+    margin-bottom: var(--fkszl82);
+}
+
+.logoColor{
+    fill: var(--fkszl815);
+}
+
+.typeFooter{
+    display: flex;
+    gap: var(--fkszl80);
+}
+
+.blockFooter{
+    margin-bottom: var(--fkszl82);
+}
+
+.typeOfFooter-1, .slashFooter{
+    color: var(--fkszl815);
+}
+
+.typeOfFooter-2{
+    color: var(--fkszl815);
+    transition: color .2s ease;
+}
+
+.linkToMyEmail-3{
+    margin-bottom: var(--fkszl83);
+}
+
+.linkToMyEmail-3::before{
+    content: "";
+    width: 20px;
+    height: 18px;
+    background-image: url(https://doubletapp.ai/v2/static/icons/mail.svg);
+}
+
+.linkToMyEmail-2{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.linkToMyEmail-1{
+    color: var(--fkszl815);
+    transition: color .2s ease;
+}
+
+.linkToMyEmail-4{
+    margin-bottom: var(--fkszl84);
+}
+
+.linkToMyEmail-4::before{
+    content: "";
+    width: 17px;
+    height: 20px;
+    background-image: url(https://doubletapp.ai/v2/static/icons/download.svg);
+    margin-left: 2px;
+}
+
+.linkToMyEmail-1::before{
+    margin-right: 10px;
+}
+
+.logoFooter-2{
+    width: 242px;
+    display: flex;
+    align-items: center;
+}
+
+.logoFooter{
+    margin-bottom: var(--fkszl83);
+    fill: var(--fkszl815);
+}
+
+.logoFooter-text{
+    color: var(--fkszl815);
+    display: flex;
+    position: relative;
+    right: 35px;
+}
+
+.footer-inner:first-child{
+    grid-column: 1/6;
+}
+
+.footer-inner:last-child{
+    grid-column: 9/13;
+}
+
+.logoFooter-dot{
+    width: 18px;
+    height: 18px;
+    position: relative;
+    align-self: flex-end;
+    top: -5px;
+    left: -30px;
+}
+
+.logoFooter-dot::before{
+    content: "";
+    left: 0;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.politicFooter{
+    color: var(--fkszl815);
+    transition: color .2s ease;
+}
+
+.txtPoliticFooter{
+    white-space: nowrap;
+}
+
+.footerBlock-2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.svg-fill{
+    fill: var(--fkszl812);
+}
+
+.typeFooter:not(:last-child){
+    margin-bottom: var(--fkszl80);
+}
+
+
+
+
+@media (max-width: 1279px) {
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: var(--fkszl83);
+    }
+    
+    .linkToMyEmail-4{
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: var(--fkszl84);
+    }
+
+    .logoFooter-text{
+        font-size: 22px;
+    }
+
+    .logoFooter-dot{
+        width: 17px;
+        height: 17px;
+    }
+
+    .logoFooter-dot::before{
+        width: 9px;
+        height: 9px;
+    }
+
+    .iconsFooter, .blockFooter{
+        margin-bottom: var(--fkszl83);
+    }
+
+    .allLow{
+        display: none;
+    }
+
+    .linkToMyEmail-3{
+        margin-bottom: var(--fkszl82);
+    }
+
+    .linkToMyEmail-4{
+        margin-bottom: 0;
+    }
+
+    .politicFooter{
+        display: none;
+    }
+
+    .politicFooter-1{
+        color: var(--fkszl815);
+        transition: color .2s ease;
+    }
+
+    .mobPolitic{
+        display: flex;
+        flex-direction: column;
+        margin-top: var(--fkszl82);
+    }
+
+    .allLow-1{
+        display: block;
+        margin-top: var(--fkszl81);
+        font-size: 10px;
+        line-height: 14px;
+    }
+}

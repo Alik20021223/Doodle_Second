@@ -1,0 +1,248 @@
+.tech-section{
+    position: relative;
+    padding: 45px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.tech-section .imagesTechBlock{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-section .image{
+    display: none;
+}
+
+.tech-section .image{
+    outline: transparent solid 1px;
+    outline-offset: -1px;
+}
+
+.tech-section .image-mobile{
+    max-width: 100%;
+}
+
+.tech-section .image-mobileLogo{
+    max-width: 257px;
+    margin: 15px 0px 21px;
+}
+
+.tech-section .contentSection{
+    flex-shrink: 0;
+}
+
+.headingTech{
+    font-size: 20px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    color: var(--fkszl815);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tech-section .headingTech{
+    margin-bottom: 20px;
+}
+.tech-section .leadText{
+    width: 90%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 1.56;
+    color: var(--fkszl820);
+    text-align: center;
+}
+
+.mb-35, .mb-35-footer{
+    margin-bottom: 35px;
+}
+
+.articleTypeTech{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.articleTypeTech h2{
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--fkszl810);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.articleTypeTech h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--fkszl815);
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    max-width: 1220px;
+}
+
+.blockItem{
+    width: 135px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.blockItem img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    opacity: 0.2;
+    transition: all 0.2s ease 0s;
+}
+
+.blockItem:hover img{
+    filter: none;
+    opacity: 1;
+}
+
+.blockItem p {
+    color: var(--fkszl815);
+}
+
+.blockItem_1{
+    width: 135px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.blockItem_1 img{
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: grayscale(100%);
+    opacity: 0.2;
+    transition: all 0.2s ease 0s;
+    background-color: white;
+}
+
+.blockItem_1:hover img{
+    filter: none;
+    opacity: 1;
+}
+
+.blockItem_1 p {
+    color: var(--fkszl815);
+}
+
+.mb-80{
+    margin-bottom: 50px;
+}
+
+@media (min-width: 700px) {
+    .headingTech{
+        font-size: 50px;
+        line-height: 1.2;
+        letter-spacing: normal;
+    }
+
+    .mb-80{
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .blockItem{
+        margin-bottom: 60px;
+    }
+
+    .blockItem_1{
+        margin-bottom: 60px;
+    }
+
+    .tech-section .leadText{
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.33;
+        text-align: left;
+    }
+
+    .tech-section .headingTech{
+        margin-bottom: 30px;
+        text-transform: initial;
+        text-align: left;
+    }
+
+    .tech-section{
+        margin-top: 100px;
+        background: none;
+        flex-flow: row-reverse;
+    }
+
+    .tech-section .imagesTechBlock{
+        width: 100%;
+    }
+
+    .tech-section .imagesTechBlock .image-container{
+        width: 100%;
+    }
+
+    .tech-section .image{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .tech-section .image-mobile, .tech-section .image-mobileLogo{
+        display: none;
+    }
+
+    .tech-section .contentSection{
+        width: 53vw;
+        margin-right: auto;
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+
+    .articleTypeTech{
+        padding: 0px;
+    }
+
+    .articleTypeTech h2{
+        font-size: 50px;
+        line-height: 1.2;
+        margin-bottom: 60px;
+    }
+
+    .articleTypeTech h3{
+        font-size: 30px;
+        line-height: 1.33;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .tech-section .contentSection{
+            width: 60%;
+    }
+}

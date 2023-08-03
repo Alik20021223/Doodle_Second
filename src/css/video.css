@@ -1,0 +1,126 @@
+.videoSection{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-inner{
+    position: relative;
+}
+
+.video-inner-2{
+    width: min(100vw,1920px);
+}
+
+.video-pTop{
+    position: relative;
+}
+
+.video-pTop-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--fkszl8d);
+    box-sizing: content-box;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.video-pTop, .video-pTop-2{
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.video-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fkszl812);
+}
+
+.sh-name{
+    text-transform: uppercase;
+    color: var(--fkszl815);
+}
+
+.sphere-video{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    object-fit: contain;
+    color: transparent;
+}
+
+.typeOfButtonVideo{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 12px;
+    border: none;
+    background: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-video{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+}
+
+.play-video > div{
+    width: 60px;
+    height: 60px;
+}
+
+.typeOfLang{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    row-gap: var(--fkszl84);
+    flex-wrap: wrap;
+}
+
+.langProj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 195px;
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease,-webkit-filter .2s ease;
+}
+
+
+@media screen and (max-width: 757px) {
+    .video-pTop-2{
+        border-radius: var(--fkszl8e);
+    }
+
+    .typeOfButtonVideo{
+        margin: 0;
+        width: 70px;
+        height: 70px;
+    }
+
+    
+
+    .play-video{
+        width: 55px;
+    }
+
+    .play-video svg{
+        width: 70%;
+        height: 100%;
+    }
+}

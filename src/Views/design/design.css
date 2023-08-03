@@ -1,0 +1,314 @@
+
+.design-section{
+    position: relative;
+    padding: 45px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.design-section .images{
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.design-section .content{
+    flex-shrink: 0;
+}
+
+.design-section .images .image-container{
+    width: 40vw;
+}
+
+.design-section .image-mobile{
+    max-width: 100%;
+}
+
+.design-section .image-web{
+    max-width: 100%;
+}
+
+.design-section .image, .design-section .image-animate{
+    display: none;
+}
+
+.design-section .heading{
+    margin-bottom: 20px;
+}
+
+.design-section .createMobTxt-1{
+    width: 90%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 1.56;
+    color: var(--fkszl815);
+    text-align: center;
+}
+
+.process-steps-1{
+    display: flex;
+    max-width: 650px;
+    margin: 60px auto 0px;
+    padding: 0px 20px;
+    position: relative;
+    flex-flow: column nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    background-image: url(https://doubletapp.ai/static/svg/workflow-steps-dots.svg);
+    background-repeat: repeat-y;
+    background-position: 80% center;
+}
+
+.process-steps-1 .step{
+    position: relative;
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 37px;
+    padding: 23px 25px;
+    border-radius: 15px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: rgba(97, 97, 97, 0.23) 0px 2px 11px -3px;
+    
+}
+
+.process-steps-1 .step_number{
+    position: absolute;
+    top: -32px;
+    left: 20px;
+    opacity: 0.53;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    color:var(--fkszl817);
+    z-index: -1;
+}
+
+.process-steps-1 .step_title{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.04;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--fkszl810);
+}
+
+.process-steps-1 .step_txt{
+    font-size: 12px;
+    line-height: 1.33;
+    color: #020202;
+}
+
+.btn-portfolio{
+    margin-top: 80px;
+}
+
+.btnPortfolio{
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    min-height: 40px;
+    border-radius: 24px;
+    outline: none;
+    border: none;
+    background-color: rgb(215, 63, 48);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(215, 63, 48, 0.3) 0px 2px 10px 0px;
+    cursor: pointer;
+    font-family: Montserrat, Verdana, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.33;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+    min-width: 270px;
+}
+
+.mobile-section .image-web{
+    width: 100%;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+@media (min-width: 1200px) {
+    .design-section {
+        padding: 45px 0;
+        background: none;
+        flex-flow: row-reverse;
+    }
+
+    .design-section .images{
+        width: 25vw;
+    }
+
+    .design-section .content{
+        width: 53vw;
+        margin-right: auto;
+        padding-top: 130px;
+        padding-bottom: 120px;
+    }
+
+    .design-section .image, .design-section .image-animate{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .design-section .image{
+        display: none;
+    }
+
+    .design-section .image-mobile{
+        display: none;
+    }
+
+    .design-section .image-animate{
+        display: block;
+        position: relative;
+    }
+
+    .design-section .heading{
+        margin-bottom: 30px;
+        text-transform: initial;
+        text-align: left;
+    }
+
+    .design-section .createMobTxt-1{
+        width: 100%;
+        font-size: 30px;
+        line-height: 1.33;
+        text-align: left;
+    }
+
+    .design-section .image-web{
+        display: none;
+    }
+
+    .process-steps-1{
+        flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        margin-top: 100px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center 40%;
+        max-width: 1304px;
+        background-image: url(https://doubletapp.ai/static/svg/workflow-steps-7.svg);
+    }
+
+    .process-steps-1 .step {
+        padding: 45px 30px 0px;
+        margin-right: 20px;
+        margin-bottom: 75px;
+        max-width: 300px;
+        min-height: 250px;
+        border-radius: 30px;
+        box-shadow: rgba(97, 97, 97, 0.23) 0px 4px 21px -5px;
+    }
+
+    .process-steps-1 .step:nth-child(3) {
+        margin-right: 90px;
+    }
+
+    .process-steps-1 .step:nth-child(3) {
+        margin-right: 10%;
+    }
+
+    .process-steps-1 .step:nth-child(4) {
+        margin-left: 90px;
+    }
+
+    .process-steps-1 .step:nth-child(n+4) {
+        margin-bottom: 0;
+    }
+
+    .process-steps-1 .step:nth-child(n+7) {
+        margin-top: 75px;
+        margin-left: 33%;
+    }
+    
+
+    .process-steps-1 .step_number{
+        top: -20px;
+        left: -45px;
+        font-size: 100px;
+        line-height: 100px;
+    }
+
+    .process-steps-1 .step_title{
+        margin-bottom: 16px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 1px;
+    }
+
+    .process-steps-1 .step_txt{
+        font-size: 14px;
+        line-height: 1.43;
+    }
+}
+
+@media (max-width: 1360px) and (min-width: 1200px) {
+    .process-steps-1 .step{
+        max-width: 260px;
+    }
+
+    .process-steps-1{
+        background-position: center 40%;
+    }
+
+    .process-steps-1 .step:nth-child(n+7){
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .design-section .content{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .design-section .content{
+        width: 55vw;
+    }
+}
+
+@media (min-width: 2070px) {
+    .design-section .images{
+        width: 20vw;
+    }
+
+    .design-section .content{
+        width: 33vw;
+    }
+}
+
+@media (min-width: 700px) {
+    .btnPortfolio{
+        min-width: 400px;
+        min-height: 80px;
+        padding: 22px 10px;
+        border-radius: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.25;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,316 @@
+.TxtAreaForm{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.blockOfForm{
+    padding-top: var(--fkszl8a);
+    width: 100%;
+}
+
+.section-form{
+    width: 100%;
+    margin-bottom: var(--fkszl89);
+}
+
+.divBlockForm{
+    width: 100%;
+}
+
+.form-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.goWorkTogether{
+    margin-bottom: var(--fkszl84);
+    text-transform: uppercase;
+}
+
+.form-label{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.areaForm-3{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: var(--fkszl8i);
+    line-height: 22px;
+    resize: none;
+}
+
+.areaForm-3:focus{
+    transition: .2s ease;
+    border: 3px solid var(--fkszl816);
+    outline: none;
+}
+
+.typeOfFormTel{
+    display: block;
+    position: relative;
+    min-width: 250px;
+    height: 100%;
+    margin-right: 25px;
+}
+
+.areaForm-2{
+    height: 60px;
+}
+
+.areaForm-1{
+    height: 230px;
+    width: 100%;
+}
+
+.areaForm-4{
+    border: 3px solid #f8f8f9;
+    background-color: var(--fkszl812);
+    color: var(--fkszl815);
+    caret-color: var(--fkszl810);
+    transition: color .2s ease,background-color .2s ease,border-color .2s ease;
+}
+
+.aboutUrSelf, .urContact{
+    width: 100%;
+    display: flex;
+}
+
+.aboutUrSelf{
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: var(--fkszl84);
+    margin-top: var(--fkszl84);
+}
+
+.labelForNaE{
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.dotBefName-1::before{
+    content: "*";
+    position: absolute;
+    color: var(--fkszl810);
+    top: 20px;
+    left: 23px;
+}
+
+.typeOfTel-1{
+    width: 100%;
+    padding: 16px 30px;
+    border-radius: var(--fkszl8i);
+    line-height: 22px;
+    resize: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+.typeOfTel:focus{
+    border-color: var(--fkszl816);
+    outline: none;
+}
+
+.attachFile-block{
+    width: 100%;
+    min-width: 345px;
+    height: 60px;
+    border-radius: var(--fkszl8i);
+    background-color: var(--fkszl812);
+    color: var(--fkszl810);
+}
+
+.attachFile-inner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.attachFile-input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.pin-block{
+    width: 24px;
+    height: 24px;
+}
+
+.attachFile-Txt{
+    margin-left: 14px;
+    text-transform: uppercase;
+}
+
+.imgSvgCheckBox{
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+}
+
+.confPolitic-2{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.confPolitic{
+    display: inline;
+    color: var(--fkszl810);
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.posOfAgree{
+    display: block;
+    position: relative;
+    top: 2px;
+}
+
+.agreeToPolitic{
+    display: flex;
+    align-items: center;
+}
+
+.agreeCheckBox{
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: white;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 23px;
+    height: 23px;
+    border: 4px solid black;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.agreeCheckBox::before{
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em white;
+}
+
+.agreeCheckBox:checked::before{
+    transform: scale(1);
+}
+
+.agreeCheckBox:checked{
+    background-color: var(--fkszl810);
+    border: 4px solid var(--fkszl810);
+}
+
+.sendFile{
+    width: 100%;
+    margin-top: var(--fkszl84);
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+@media screen and (max-width: 1279px) {
+    .section-form{
+        margin-bottom: var(--fkszl8b);
+    }
+    
+    .form-label{
+        margin-right: 0;
+    }
+
+    .aboutUrSelf{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .urContact{
+        margin-bottom: var(--fkszl84);
+    }
+
+    .labelForNaE{
+        margin-right: 0;
+    }
+    
+    .labelForNaE-1{
+        margin-left: 30px;
+    }
+
+    .typeOfFormTel{
+        margin-right: 30px;
+        width: 100%;
+    }
+
+    .attachFile-block{
+        width: 100%;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .section-form{
+        margin-bottom: var(--fkszl8a);
+    }
+
+    .goWorkTogether, .aboutUrSelf{
+        margin-bottom: var(--fkszl81);
+    }
+
+    .form-label{
+        margin-bottom: var(--fkszl81);
+    }
+
+    .aboutUrSelf{
+        margin-top: 0;
+    }
+
+    .urContact{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .labelForNaE{
+        margin-bottom: var(--fkszl81);
+    }
+
+    .labelForNaE-1{
+        margin-left: 0px;
+    }
+
+    .typeOfFormTel{
+        margin-right: 0;
+        margin-bottom: var(--fkszl81);
+    }
+
+    .agreeToPolitic{
+        margin-top: var(--fkszl82);
+    }
+
+    .TxtAreaForm{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .confPolitic-2{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+

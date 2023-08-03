@@ -1,0 +1,262 @@
+.vacanSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainVacan{
+    width: 100vw;
+}
+
+.vacanMainBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vacanMainBlock-2{
+    width: 100vw;
+}
+
+.vacanBlock-inner{
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: calc(100vh - 120px);
+    padding-bottom: var(--fkszl84);
+    padding-top: var(--fkszl89);
+}
+
+.chooseVacan{
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.typeOfVac{
+    margin-bottom: var(--fkszl84);
+    text-transform: uppercase;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-character: "";
+    -webkit-hyphenate-character: "";
+}
+
+.txtVacType{
+    max-width: 60%;
+}
+
+.bigCircleVacan{
+    width: 37.25rem;
+    height: 37.25rem;
+    position: absolute;
+    z-index: -1;
+    bottom: -8rem;
+    right: -14rem;
+    border-radius: var(--fkszl8j);
+    background-color: var(--fkszl810);
+    overflow: visible;
+}
+
+.chooseVac-block{
+    width: min(100vw,1920px);
+}
+
+.chooseVac-inner{
+    position: relative;
+    width: 100%;
+    margin-bottom: var(--fkszl88);
+    padding: 100px 0 95px;
+    background-color: var(--fkszl812);
+}
+
+.chooseVac-inner-1{
+    border-top-right-radius: var(--fkszl8d);
+    border-top-left-radius: var(--fkszl8d);
+}
+
+.chooseVac-inner-2{
+    border-bottom-right-radius: var(--fkszl8d);
+    border-bottom-left-radius: var(--fkszl8d);
+}
+
+.h2ChooseVac{
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.VacBlock-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VacBlock-inner>:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.vacBlock-1{
+    overflow: hidden;
+}
+.vacBlock-2{
+    width: min(100vw,1920px);
+}
+
+.linkVacBlock{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 101px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 35px 0 35px 40px;
+    border-radius: 10px;
+    text-align: start;
+    border: 1px solid var(--fkszl813);
+    background-color: var(--fkszl813);
+    transition: border-color .3s ease,background-color .3s ease;
+}
+
+.h3VacanBlock{
+    display: block;
+    width: calc(100% - 116px);
+    color: var(--fkszl815);
+    text-transform: uppercase;
+}
+
+.linkVacBlock:hover h3, .linkVacBlock:visited h3{
+    color: var(--fkszl815);
+}
+
+.animPossArrow{
+    transform: translate(300px, 0px);
+    transition: transform 0.3 ease;
+}
+
+.defaultPoss{
+    transform: translate(0px, 0px);
+    transition: transform 0.3 ease;
+}
+
+.svg-arrow{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 116px;
+    height: 120px;
+}
+
+.svg-arrow path{
+    fill: #fff;
+    transition: fill .3s ease;
+}
+
+.linkVacBlock:hover path, .linkVacBlock:focus path {
+    fill: var(--fkszl810);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .linkVacBlock:hover{
+        border: 1px dashed var(--fkszl811);
+        background-color: var(--fkszl812);
+    }
+}
+
+
+@media screen and (max-width: 1919px) {
+    .chooseVac-inner{
+        width: 100vw;
+        min-width: auto;
+        left: calc(50% - 50vw);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .txtVacType{
+        max-width: none;
+    }
+
+    .bigCircleVacan{
+        width: 408px;
+        height: 408px;
+        bottom: -220px;
+        right: -128px;
+    }
+}
+
+@media screen and (min-width: 1279px) {
+    .vacTypeH1{
+        font-size: 130px;
+        line-height: 150px;
+        font-weight: 800;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .mainVacan{
+        overflow: hidden;
+    }
+
+    .vacanMainBlock-2{
+        overflow: hidden;
+    }
+
+    .vacanBlock-inner{
+        padding-top: var(--fkszl87);
+    }
+
+    .chooseVac-inner{
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .txtVacType{
+        max-width: none;
+    }
+
+    .bigCircleVacan{
+        width: 308px;
+        height: 308px;
+        bottom: 0;
+        right: -120px;
+    }
+
+    .bigCircleVacan::before{
+        content: "";
+        height: 308px;
+        width: 308px;
+        position: absolute;
+        right: 155px;
+        background: url(https://doubletapp.ai/v2/static/icons/arrows.svg) no-repeat 0
+    }
+
+    .vacanBlock-inner{
+        min-height: calc(100vh - 100px);
+        padding-bottom: var(--fkszl81);
+        padding-top: var(--fkszl84);
+    }
+
+    .h2ChooseVac{
+        margin-bottom: 32px;
+    }
+
+    .linkVacBlock{
+        padding: 40px 0 41px 20px;
+    }
+
+    .chooseVac-inner{
+        padding: 32px 0;
+    }
+}
+
+

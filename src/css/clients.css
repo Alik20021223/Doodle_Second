@@ -1,0 +1,108 @@
+.clientSec-1{
+    padding: var(--fkszl87) 0;
+    background-color: var(--fkszl812);
+    border-radius: var(--fkszl8d);
+}
+
+.clientSec-2{
+    width: min(100vw,1920px);
+}
+
+.posOfClients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sizeOfClients{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blockOfClients{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-top: var(--fkszl87);
+}
+
+.typeOfBlockClient{
+    max-height: 100px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fkszl812);
+    border: none;
+    border-radius: var(--fkszl8h);
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease,-webkit-filter .2s ease;
+}
+
+.typeOfBlockClient div{
+    max-width: 100px;
+    height: 100%;
+}
+
+.typeOfBlockClient img{
+    transition: -webkit-filter .2s ease;
+    transition: filter .2s ease;
+    transition: filter .2s ease,-webkit-filter .2s ease;
+    -webkit-filter: var(--fkszl81e);
+    filter: var(--fkszl81e);
+}
+
+@media screen and (max-width: 1279px) {
+    
+
+    .typeOfBlockClient{
+        width: 100%;
+    }
+
+    .blockOfClients{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,minmax(100px,1fr));
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 757px) {
+    .clientSec-1{
+        padding: var(--fkszl84) 0;
+        border-radius: var(--fkszl8e);
+    }
+
+    .posOfClients{
+        align-items: flex-start;
+    }
+
+    .typeOfBlockClient{
+        height: 60px;
+        padding: 0 3px;
+    }
+
+    .typeOfBlockClient div{
+        max-width: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .blockOfClients{
+        max-height: 136px;
+        overflow: hidden;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        margin-top: var(--fkszl84);
+    }
+}
