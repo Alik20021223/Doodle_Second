@@ -1,3 +1,13 @@
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
 .Project1Section{
     display: flex;
     flex-direction: column;
@@ -439,10 +449,7 @@ li {
 }
 
 .imgProject{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    inset: 0px;
+    max-height: 354px;
     object-fit: cover;
     color: transparent;
 }
@@ -816,6 +823,13 @@ li {
     height: 34.6875rem;
 }
 
+.imgSwiperBlock .swiper-wrapper{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    align-items: center;
+}
+
 
 
 .swiper-wrapper{
@@ -842,6 +856,60 @@ li {
     align-items: center;
 }
 
+.imgSwiperBlock .swiper-slide{
+    width: 181px!important;
+    height: 394px;
+    transition: -webkit-transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease,-webkit-transform .2s ease;
+}
+
+.imgSwiperBlock .swiper-slide img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    object-fit: cover;
+    color: transparent;
+}
+
+.imgSwiperBlock .swiper-slide-active{
+    -webkit-transform: scale(1.4)!important;
+    transform: scale(1.4)!important;
+}
+
+.reviewMobileDiv{
+    overflow-x: hidden;
+}
+
+.linkForAllProject-inner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 300px;
+    border-radius: var(--fkszl8h);
+}
+
+.linkForAllProject-inner-2{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+
+
+.blockProj-b .linkForAllProject-inner{
+    -webkit-clip-path: polygon(2.5% 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(2.5% 0,100% 0,100% 100%,0 100%);
+}
+
+
+
+
+
+
 
 
 
@@ -854,8 +922,27 @@ li {
         padding-bottom: calc(600px - 88px);
     }
 
+    .blockProj-b .linkForAllProject-inner{
+        -webkit-clip-path: polygon(5% 0,100% 0,100% 100%,0 100%);
+        clip-path: polygon(5% 0,100% 0,100% 100%,0 100%);
+    }
+
+    .LinkToAllProject{
+        padding: var(--fkszl84) 0 0 var(--fkszl86);
+    }
+
     .nameOfProject, .discribe{
         width: 100%;
+    }
+
+    .reviewBlock{
+        flex-direction: column;
+        align-items: center;
+        margin: var(--fkszl87) 0;
+    }
+
+    .blockReview-1::after{
+        right: 155px;
     }
 
     .listOfLink{
@@ -873,6 +960,10 @@ li {
 
     .linkToProject:first-child{
         margin-top: 0;
+    }
+
+    .blockReview-1::before{
+        right: 54px;
     }
 
     .imgBlockProject{
@@ -942,6 +1033,21 @@ li {
         margin: 0 0 40px 207px;
         z-index: auto;
     }
+    
+    .reviewSpan{
+        align-self: flex-start;
+    }
+
+    .reviewHeader{
+        position: static;
+        font-size: 42px;
+        line-height: 56px;
+        -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+        writing-mode: horizontal-tb;
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
 
     .number-inner{
         min-width: 331px;
@@ -986,6 +1092,47 @@ li {
     .imgSwiperBlock{
         height: 555px;
     }
+
+    .blockReview-1{
+        margin-left: 0;
+        margin-top: var(--fkszl83);
+        min-height: auto;
+        padding: var(--fkszl87) 60px;
+    }
+
+    .allProjectSpanLink{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .linkForAllProject-inner{
+        height: 200px;
+    }
+
+    .h2TypeTeam{
+        text-align: start;
+    }
+
+    .heightBlockTeam{
+        padding: var(--fkszl86) 15px;
+    }
+
+    .listBlockTeam{
+        -webkit-column-gap: 30px;
+        column-gap: 30px;
+        row-gap: var(--fkszl84);
+    }
+
+    .blockPersonTeam{
+        height: 296px;
+        max-width: 206px;
+    }
+
+    .imgPerson{
+        width: 206px;
+        height: 206px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
@@ -994,8 +1141,55 @@ li {
         padding-top: var(--fkszl87);
     }
 
+    .imgPerson{
+        width: 130px;
+        height: 130px;
+    }
+
+    .blockPersonTeam{
+        height: 196px;
+        max-width: 130px;
+    }
+
+    .heightBlockTeam{
+        padding: var(--fkszl83) 0;
+    }
+
+    .listBlockTeam{
+        row-gap: var(--fkszl83);
+    }
+
+    .linkForAllProject-inner{
+        min-height: 140px;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        -webkit-clip-path: none!important;
+        clip-path: none!important;
+    }
+
+    .h2TypeTeam{
+        width: 80%;
+    }
+
+    .allProjectSpanLink{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .blockArrow_2{
+        bottom: 10px;
+        right: 10px;
+        height: 15px;
+        width: 76px;
+    }
+
     .AllProjectLink{
         top: 10px;
+    }
+
+    .blockReview-1::after{
+        right: 35px;
     }
 
     .nameOfProject{
@@ -1033,6 +1227,10 @@ li {
         top: -90px;
     }
 
+    .OurTeamBlock{
+        padding: var(--fkszl84) 0;
+    }
+
     .imgBlockProject .svgElement{
         left: -405px;
         position: absolute;
@@ -1057,6 +1255,29 @@ li {
 
     .blockProjectNumber{
         left: 0;
+    }
+
+    .reviewHeader{
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .LinkToAllProject{
+        padding: var(--fkszl82) 0 0 20px;
+    }
+
+    .allProjectSpanLink-2{
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .allProjectSpanLink{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .blockReview-1{
+        padding: var(--fkszl82) 20px;
     }
 
     .blockProjectNumber-8{
@@ -1109,11 +1330,47 @@ li {
         margin: var(--fkszl84) 0;
     }
 
-    .imgSwiperBlock{
+    .imgSwiperBlock {
         height: 450px;
+    }
+    .projects {
+        display: none !important;
+    }
+
+    .imgSwiperBlock .swiper-slide{
+        width: 147px!important;
+        height: 316px;
+    }
+
+    .blockReview-1::before{
+        z-index: -1;
+        right: -66px;
     }
 }
 
+@media screen and (min-width: 767px) {
+    .imgSwiperBlock {
+        display: none !important;
+    }
+    
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.imgProject {
+    pointer-events: none;
+    user-select: none;
+    transition: transform 300ms;
+}
+
+.imgProjectActive {
+    transform: scale(1.1);
+}
 
 
 @media (hover: hover) and (pointer: fine) {

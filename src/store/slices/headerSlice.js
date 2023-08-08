@@ -43,9 +43,9 @@ const initialState = {
   icons: [
     {
       id: 1,
-      href_img: "./img/header-img/telegram-icon.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/telegram-icon.svg",
-      hrefRedImg: "./img/header-img/red-icon/telegram-icon.svg",
+      href_img: "../img/header-img/telegram-icon.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/telegram-icon.svg",
+      hrefRedImg: "../img/header-img/red-icon/telegram-icon.svg",
       alt: "tg-icon",
       href: "https://t.me/Alik.1223",
       p: 0,
@@ -53,9 +53,9 @@ const initialState = {
     },
     {
       id: 2,
-      href_img: "./img/header-img/youtube-icon.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/youtube-icon.svg",
-      hrefRedImg: "./img/header-img/red-icon/youtube-icon.svg",
+      href_img: "../img/header-img/youtube-icon.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/youtube-icon.svg",
+      hrefRedImg: "../img/header-img/red-icon/youtube-icon.svg",
       alt: "yt-icon",
       href: "https://t.me/Alik.1223",
       p: 1,
@@ -63,9 +63,9 @@ const initialState = {
     },
     {
       id: 3,
-      href_img: "./img/header-img/instagram-icon.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/instagram-icon.svg",
-      hrefRedImg: "./img/header-img/red-icon/instagram-icon.svg",
+      href_img: "../img/header-img/instagram-icon.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/instagram-icon.svg",
+      hrefRedImg: "../img/header-img/red-icon/instagram-icon.svg",
       alt: "ins-icon",
       href: "https://t.me/Alik.1223",
       p: 2,
@@ -73,9 +73,9 @@ const initialState = {
     },
     {
       id: 4,
-      href_img: "./img/header-img/vk.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/vk.svg",
-      hrefRedImg: "./img/header-img/red-icon/vk.svg",
+      href_img: "../img/header-img/vk.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/vk.svg",
+      hrefRedImg: "../img/header-img/red-icon/vk.svg",
       alt: "vk-icon",
       href: "https://t.me/Alik.1223",
       p: 3,
@@ -83,9 +83,9 @@ const initialState = {
     },
     {
       id: 5,
-      href_img: "./img/header-img/facebook.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/facebook.svg",
-      hrefRedImg: "./img/header-img/red-icon/facebook.svg",
+      href_img: "../img/header-img/facebook.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/facebook.svg",
+      hrefRedImg: "../img/header-img/red-icon/facebook.svg",
       alt: "fb-icon",
       href: "https://t.me/Alik.1223",
       p: 4,
@@ -93,9 +93,9 @@ const initialState = {
     },
     {
       id: 6,
-      href_img: "./img/header-img/email.svg",
-      hrefWhiteImg: "./img/header-img/white-icon/email.svg",
-      hrefRedImg: "./img/header-img/red-icon/email.svg",
+      href_img: "../img/header-img/email.svg",
+      hrefWhiteImg: "../img/header-img/white-icon/email.svg",
+      hrefRedImg: "../img/header-img/red-icon/email.svg",
       alt: "em-icon",
       href: "https://t.me/Alik.1223",
       p: 5,
@@ -2024,9 +2024,9 @@ export const heaterSlice = createSlice({
     toggleMenuList: (state) => {
       state.isOpenMenu = !state.isOpenMenu;
       document.body.style = state.isOpenMenu ? "overflow: hidden" : "";
-      document.getElementById("root").style = state.isOpenMenu
-        ? "overflow: hidden"
-        : "";
+      // document.getElementById("root").style = state.isOpenMenu
+      //   ? "overflow: hidden"
+      //   : "";
     },
 
     toggleLightSide: (state) => {

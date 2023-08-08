@@ -321,6 +321,7 @@ function Main() {
                     style={{
                       fontSize: `${width > 757 ? getFontSize(o.id, idClicked) : getFontSize_Mob(o.id, idClicked)}px`,
                       lineHeight: `${width > 757 ? getLineHeight(o.id, idClicked) : getLineHeight_Mob(o.id, idClicked)}px`,
+                      
                     }}
                   >
                     {o.name}

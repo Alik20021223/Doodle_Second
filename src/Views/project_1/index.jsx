@@ -26,10 +26,9 @@ function FirstProject() {
     const {tech} = project
     const {ourTeam} = project
     const {review} = project
-    // const [height, setHeight] = useState({height: '534px'});
+    
+    let StyleHeight = width > 1279 ? (hidden ? { height: '786px' } : { height: '534px' }) : (hidden ? { height: '1586px' } : { height: '456px' });
 
-    
-    
     const Style = {
         opacity: '1',
         transition: 'transform 300ms ease-out 0s',
@@ -44,16 +43,13 @@ function FirstProject() {
         color: 'transparent',
     }
 
-    
-
-
     const handleMouseOver = (event, source) => {
         const {clientX, clientY} = event
         let clipPathValue = null
         if(source === 'h3-element') {
-            clipPathValue = `40px at ${clientX-130}px ${clientY-150}px`;
+            clipPathValue = `40px at ${clientX-130}px ${clientY-220}px`;
         } else {
-            clipPathValue = `40px at ${clientX-100}px ${clientY-100}px`;
+            clipPathValue = `40px at ${clientX-100}px ${clientY-150}px`;
         }
         
 
@@ -69,9 +65,9 @@ function FirstProject() {
 
     const handleHidden = () => {
     if (hidden) {
-        teamSectionRef.current.scrollIntoView({ behavior: 'smooth' });
+        teamSectionRef?.current.scrollIntoView({ behavior: 'smooth' });
     }
-    setHidden((prevHidden) => !prevHidden)
+        setHidden((prevHidden) => !prevHidden)
     }
 
   return (
@@ -225,12 +221,12 @@ function FirstProject() {
                                     <div className='imgResult-Block clientSec-2'>
                                         <div className='container_adaptive'>
                                             <div className='img-inner img-inner-1'>
-                                                {/* {width > 1279 && imgResult.map((o) => (
+                                                {width > 1279 && imgResult.map((o) => (
                                                     <div key={o.id} onClick={() => setId(o.id)} className={`imgBlock-1 imgBlock-2 ${o.id === id ? 'imgBlock-3' : ''}`} role='button'>
                                                         <img src={o.img} alt="screen" className='imgProject'/>
                                                     </div>
-                                                ))} */}
-                                                <Slides/>
+                                                ))}
+                                                {width < 1279 && <Slides/>}
                                             </div>
                                         </div>
                                     </div>
@@ -273,7 +269,7 @@ function FirstProject() {
                         <div className='container_adaptive'>
                             <h2 className='sizeOfLink h2TypeTeam'>Наша супер Команда</h2>
                             <div className='blockTeam'>
-                                <div className='heightBlockTeam' style={hidden ? { height: '786px' } : { height: '534px' }}>
+                                <div className='heightBlockTeam' style={StyleHeight}>
                                     <div className='listBlockTeam'>
                                         {ourTeam.map((o) => (
                                             <span key={o.id} className='blockPersonTeam'>
@@ -307,9 +303,9 @@ function FirstProject() {
                     </div>
                 </section>
                 <section className='reviewSection'>
-                    <div className='reviewBlock container_adaptive'>
+                    <div className='reviewBlock '>
                         <h2 className='btnOff'>Отзыв</h2>
-                        <div>
+                        {width > 1279 && <><div className='reviewSpan'>
                             <span className='reviewHeader'>Отзыв</span>
                         </div>
                         <div className='blockReview'>
@@ -327,7 +323,26 @@ function FirstProject() {
                                     <div className='reviewTxt tasksTxt-1'>{review.reviewTxt}</div>
                                 </div>
                             </div>
-                        </div>
+                        </div></>}
+                        {width < 1279 && <div className='clientSec-2 reviewMobileDiv'>
+                            <div className='container_adaptive'>
+                                <div className='reviewSpan'>
+                                    <span className='reviewHeader'>Отзыв</span>
+                                </div>
+                                <div className='blockReview-1'>
+                                    <div className='blockIconFace'>
+                                        <div className='FaceImg'>
+                                            <img src={review.img} alt="" className='img'/>
+                                        </div>
+                                        <div className='aboutFace'>
+                                            <span className='displayBlock sizeOfLinkToUs'>{review.name}</span>
+                                            <span className='displayBlock TxtAreaForm'>{review.profeccion}</span>
+                                        </div>
+                                    </div>
+                                    <div className='reviewTxt tasksTxt-1'>{review.reviewTxt}</div>
+                                </div>
+                            </div>
+                        </div>}
                     </div>
                 </section>
                 <div className="project-block">
@@ -369,14 +384,15 @@ function FirstProject() {
                                                 loading="lazy"
                                                 className="img-project"
                                                 />
-                                            </div></>) : (<div className='LinkToAllProject'>
-                                                <span className='allProjectSpanLink-2 allProjectSpanLink-3'>{o.project_p}</span>
-                                                <span className='allProjectSpanLink'>{o.project_h3}</span>
-                                                <div className='blockArrow_2'>
-                                                    <div dangerouslySetInnerHTML={{ __html: arrowProject_2 }} className='svgElement'></div>
+                                            </div></>) : (<div className='linkForAllProject-inner linkForAllProject-inner-2'>
+                                                <div className='LinkToAllProject'>
+                                                    <span className='allProjectSpanLink-2 allProjectSpanLink-3'>{o.project_p}</span>
+                                                    <span className='allProjectSpanLink'>{o.project_h3}</span>
+                                                    <div className='blockArrow_2'>
+                                                        <div dangerouslySetInnerHTML={{ __html: arrowProject_2 }} className='svgElement'></div>
+                                                    </div>
                                                 </div>
                                             </div>)}
-                                            
                                             </Link>
                                         </div>
                                     </div>
